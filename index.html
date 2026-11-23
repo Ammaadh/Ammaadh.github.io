@@ -5,406 +5,186 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amaz ur Rehman | Portfolio</title>
-  <meta name="description" content="Portfolio of Amaz ur Rehman, student at NUST.">
+  <meta name="description" content="Portfolio of Amaz ur Rehman, BE Information Security student at NUST.">
+  <meta name="theme-color" content="#050a08">
 
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Home">amaz@nust:~<b>#</b></a>
+    <nav class="nav" aria-label="Sections">
+      <button class="nav-link active" data-nav-link>About</button>
+      <button class="nav-link" data-nav-link>Skills</button>
+      <button class="nav-link" data-nav-link>Projects</button>
+      <button class="nav-link" data-nav-link>Contact</button>
+    </nav>
+  </header>
+
   <main>
 
-    <!-- #SIDEBAR -->
-    <aside class="sidebar" data-sidebar>
+    <!-- ABOUT -->
+    <article class="page active" data-page="about">
 
-      <div class="sidebar-info">
+      <p class="cmd"><b>amaz@nust</b>:~$ <i>whoami</i></p>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.jpg" alt="Amaz ur Rehman" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Amaz ur Rehman">Amaz ur Rehman</h1>
-          <p class="title">BE Information Security · Semester 3</p>
+      <section class="hero">
+        <img class="avatar" src="./assets/images/my-avatar.jpg" alt="Photo of Amaz ur Rehman" width="160" height="160">
+        <div>
+          <h1>Amaz ur Rehman<span class="cur"></span></h1>
+          <p class="role">BE Information Security &middot; Semester 3 &middot; NUST</p>
+          <p class="actions">
+            <a class="btn" href="mailto:arehman.beis25mcs@student.nust.edu.pk">Contact me</a>
+            <a class="btn-alt" href="https://github.com/Ammaadh" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn-alt" href="https://www.linkedin.com/in/amaz-ur-rehman-903b94363/" target="_blank" rel="noopener">LinkedIn</a>
+          </p>
         </div>
+      </section>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+      <p class="cmd"><b>amaz@nust</b>:~$ <i>cat about.txt</i></p>
+      <h2>About me</h2>
 
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:arehman.beis25mcs@student.nust.edu.pk" class="contact-link">arehman.beis25mcs@student.nust.edu.pk</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="logo-github"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">GitHub</p>
-              <a href="https://github.com/Ammaadh" class="contact-link" target="_blank" rel="noopener">github.com/Ammaadh</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">LinkedIn</p>
-              <a href="https://www.linkedin.com/in/amaz-ur-rehman-903b94363/" class="contact-link" target="_blank" rel="noopener">https://www.linkedin.com/in/amaz-ur-rehman-903b94363/</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="school-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">University</p>
-              <p class="contact-link">NUST, Islamabad</p>
-            </div>
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://github.com/Ammaadh" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/amaz-ur-rehman-903b94363/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="mailto:arehman.beis25mcs@student.nust.edu.pk" class="social-link" aria-label="Email">
-              <ion-icon name="mail-outline"></ion-icon>
-            </a>
-          </li>
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-    <!-- #main-content -->
-    <div class="main-content">
-
-      <!-- #NAVBAR -->
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Skills</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-        </ul>
-      </nav>
-
-
-      <!-- #ABOUT -->
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm Amaz ur Rehman, a third-semester BE Information Security student at NUST. I spend most of my time on Linux
-            (I daily-drive Arch), and I hold the ISC2 Certified in Cybersecurity credential and several TryHackMe certifications, and I like understanding how things actually work underneath: how a packet
-            finds its way across a network, how a server turns a request into a web page, and how DNS ties a
-            name to a machine.
-          </p>
-          <p>
-            In Applications of ICT I have moved from theory to building real things on the public internet:
-            this portfolio on GitHub Pages, a WordPress site on an Ubuntu server in Azure, and a custom domain
-            managed through Cloudflare. I use Git for everything I build and I use AI tools such
-            as GitHub Copilot carefully, checking their output instead of trusting it blindly. I am looking for
-            opportunities to keep learning about systems, networking and security.
-          </p>
-        </section>
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What I'm working on</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon name="terminal-outline" class="service-ion"></ion-icon>
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Linux &amp; the command line</h4>
-                <p class="service-item-text">Daily Arch Linux user, comfortable with the shell, packages and services.</p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon name="cloud-outline" class="service-ion"></ion-icon>
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Cloud &amp; web hosting</h4>
-                <p class="service-item-text">Deploying sites on GitHub Pages and virtual machines on Microsoft Azure.</p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon name="git-branch-outline" class="service-ion"></ion-icon>
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Version control</h4>
-                <p class="service-item-text">Using Git and GitHub to track, share and publish my work.</p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon name="shield-checkmark-outline" class="service-ion"></ion-icon>
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Networks &amp; security</h4>
-                <p class="service-item-text">Learning DNS, TLS and how to keep a public server safe.</p>
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-      <!-- #SKILLS -->
-      <article class="resume" data-page="skills">
-
-        <header>
-          <h2 class="h2 article-title">Skills</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">National University of Sciences and Technology (NUST)</h4>
-              <span>2025 — Present</span>
-              <p class="timeline-text">BE Information Security, currently in Semester 3.</p>
-            </li>
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">Tools I can actually use</h3>
-
-          <ul class="skill-tags content-card">
-            <li class="skill-tag">Linux (Arch)</li>
-            <li class="skill-tag">Bash / shell</li>
-            <li class="skill-tag">Git &amp; GitHub</li>
-            <li class="skill-tag">GitHub Pages</li>
-            <li class="skill-tag">HTML &amp; CSS</li>
-            <li class="skill-tag">Microsoft Azure</li>
-            <li class="skill-tag">WordPress</li>
-            <li class="skill-tag">DNS &amp; Cloudflare</li>
-            <li class="skill-tag">VS Code + AI coding tools</li>
-          </ul>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">Certifications</h3>
-
-          <ul class="skill-tags content-card">
-            <li class="skill-tag">ISC2 Certified in Cybersecurity (CC)</li>
-            <li class="skill-tag">TryHackMe: Pre Security</li>
-            <li class="skill-tag">TryHackMe: Security Engineer</li>
-            <li class="skill-tag">TryHackMe: Jr Penetration Tester</li>
-            <li class="skill-tag">TryHackMe: Cyber Security 101</li>
-          </ul>
-
-        </section>
-
-      </article>
-
-
-      <!-- #PROJECTS -->
-      <article class="portfolio" data-page="projects">
-
-        <header>
-          <h2 class="h2 article-title">Projects &amp; Labs</h2>
-        </header>
-
-        <section class="service">
-
-          <ul class="service-list project-cards">
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon name="person-circle-outline" class="service-ion"></ion-icon>
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Portfolio on GitHub Pages</h4>
-                <p class="service-item-text">This site: an MIT-licensed template customised in VS Code with Copilot and published with GitHub Pages.</p>
-                <a class="project-link" href="https://github.com/Ammaadh/Ammaadh.github.io" target="_blank" rel="noopener">View repository →</a>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon name="server-outline" class="service-ion"></ion-icon>
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">WordPress on an Azure Ubuntu VM</h4>
-                <p class="service-item-text">Group project: built a LAMP stack on an Ubuntu Server VM in Azure and hosted our WordPress site on it.</p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon name="globe-outline" class="service-ion"></ion-icon>
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Custom domain with Cloudflare DNS</h4>
-                <p class="service-item-text">Claimed a free domain, moved its DNS to Cloudflare and served the site over HTTPS with Let's Encrypt.</p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon name="git-network-outline" class="service-ion"></ion-icon>
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Lab 3: Networks &amp; collaboration</h4>
-                <p class="service-item-text">Explored how devices communicate on a network and how teams collaborate online.</p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon name="cloud-upload-outline" class="service-ion"></ion-icon>
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Lab 8: Cloud collaboration</h4>
-                <p class="service-item-text">Used cloud tools to share, edit and manage files as a team in real time.</p>
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-      <!-- #CONTACT -->
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="about-text">
-          <p>The best way to reach me is by email or LinkedIn. My code lives on GitHub.</p>
-        </section>
-
-        <section class="service">
-          <ul class="service-list">
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon name="mail-outline" class="service-ion"></ion-icon>
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Email</h4>
-                <a class="project-link" href="mailto:arehman.beis25mcs@student.nust.edu.pk">arehman.beis25mcs@student.nust.edu.pk</a>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon name="logo-github" class="service-ion"></ion-icon>
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">GitHub</h4>
-                <a class="project-link" href="https://github.com/Ammaadh" target="_blank" rel="noopener">github.com/Ammaadh</a>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <ion-icon name="logo-linkedin" class="service-ion"></ion-icon>
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">LinkedIn</h4>
-                <a class="project-link" href="https://www.linkedin.com/in/amaz-ur-rehman-903b94363/" target="_blank" rel="noopener">https://www.linkedin.com/in/amaz-ur-rehman-903b94363/</a>
-              </div>
-            </li>
-
-          </ul>
-        </section>
-
-      </article>
-
-      <footer class="site-footer">
+      <section class="prose">
         <p>
-          Template: <a href="https://github.com/codewithsadee/vcard-personal-portfolio" target="_blank" rel="noopener">vCard</a>
-          by codewithsadee, used under the <a href="./LICENSE">MIT License</a>.
+          I'm Amaz ur Rehman, a third-semester BE Information Security student at NUST. I spend most of my time on
+          Linux (I daily-drive Arch), and I hold the ISC2 Certified in Cybersecurity credential and several
+          TryHackMe certifications. I like understanding how things actually work underneath: how a packet finds
+          its way across a network, how a server turns a request into a web page, and how DNS ties a name to a
+          machine.
         </p>
-      </footer>
+        <p>
+          In Applications of ICT I have moved from theory to building real things on the public internet: this
+          portfolio on GitHub Pages, a WordPress site on an Ubuntu server in Azure, and a custom domain managed
+          through Cloudflare. I use Git for everything I build and I use AI tools such as GitHub Copilot carefully,
+          checking their output instead of trusting it blindly. I want to keep learning about systems and security.
+        </p>
+      </section>
 
-    </div>
+      <p class="cmd"><b>amaz@nust</b>:~$ <i>ls focus/</i></p>
+      <h2>What I'm working on</h2>
+
+      <ul class="grid">
+        <li class="card">
+          <h3>Linux &amp; the command line</h3>
+          <p>Daily Arch Linux user, comfortable with the shell, packages and services.</p>
+        </li>
+        <li class="card">
+          <h3>Cloud &amp; web hosting</h3>
+          <p>Deploying sites on GitHub Pages and virtual machines on Microsoft Azure.</p>
+        </li>
+        <li class="card">
+          <h3>Version control</h3>
+          <p>Using Git and GitHub to track, share and publish my work.</p>
+        </li>
+        <li class="card">
+          <h3>Networks &amp; security</h3>
+          <p>Learning DNS, TLS and how to keep a public server safe.</p>
+        </li>
+      </ul>
+
+    </article>
+
+
+    <!-- SKILLS -->
+    <article class="page" data-page="skills">
+
+      <p class="cmd"><b>amaz@nust</b>:~$ <i>cat education.log</i></p>
+      <h2>Education</h2>
+      <ul class="rows">
+        <li>
+          <span class="when">2025 &ndash; now</span>
+          <span><strong>National University of Sciences and Technology (NUST)</strong><br>
+            BE Information Security, currently in Semester 3.</span>
+        </li>
+      </ul>
+
+      <p class="cmd"><b>amaz@nust</b>:~$ <i>ls -la tools/</i></p>
+      <h2>Tools I can actually use</h2>
+      <ul class="tags">
+        <li>Linux (Arch)</li>
+        <li>Bash / shell</li>
+        <li>Git &amp; GitHub</li>
+        <li>GitHub Pages</li>
+        <li>HTML &amp; CSS</li>
+        <li>Microsoft Azure</li>
+        <li>WordPress</li>
+        <li>DNS &amp; Cloudflare</li>
+        <li>VS Code + AI coding tools</li>
+      </ul>
+
+      <p class="cmd"><b>amaz@nust</b>:~$ <i>cat certs.txt</i></p>
+      <h2>Certifications</h2>
+      <ul class="tags certs">
+        <li>ISC2 Certified in Cybersecurity (CC)</li>
+        <li>TryHackMe: Pre Security</li>
+        <li>TryHackMe: Cyber Security 101</li>
+        <li>TryHackMe: Jr Penetration Tester</li>
+        <li>TryHackMe: Security Engineer</li>
+      </ul>
+
+    </article>
+
+
+    <!-- PROJECTS -->
+    <article class="page" data-page="projects">
+
+      <p class="cmd"><b>amaz@nust</b>:~$ <i>ls -la projects/</i></p>
+      <h2>Projects</h2>
+
+      <ul class="grid one">
+        <li class="card">
+          <h3>Portfolio on GitHub Pages</h3>
+          <p>This site: an MIT-licensed template customised and published with GitHub Pages.</p>
+          <a href="https://github.com/Ammaadh/Ammaadh.github.io" target="_blank" rel="noopener">view repository</a>
+        </li>
+        <li class="card">
+          <h3>WordPress on an Azure Ubuntu VM</h3>
+          <p>Group project: built a LAMP stack on an Ubuntu Server VM in Azure and hosted our WordPress site on it.</p>
+        </li>
+        <li class="card">
+          <h3>Custom domain with Cloudflare DNS</h3>
+          <p>Claimed a free domain, moved its DNS to Cloudflare and served the site over HTTPS with Let's Encrypt.</p>
+        </li>
+      </ul>
+
+    </article>
+
+
+    <!-- CONTACT -->
+    <article class="page" data-page="contact">
+
+      <p class="cmd"><b>amaz@nust</b>:~$ <i>./contact</i></p>
+      <h2>Contact</h2>
+      <p class="prose">The best way to reach me is by email or LinkedIn. My code lives on GitHub.</p>
+
+      <ul class="rows contact">
+        <li><span class="when">email</span>
+          <a href="mailto:arehman.beis25mcs@student.nust.edu.pk">arehman.beis25mcs@student.nust.edu.pk</a></li>
+        <li><span class="when">github</span>
+          <a href="https://github.com/Ammaadh" target="_blank" rel="noopener">github.com/Ammaadh</a></li>
+        <li><span class="when">linkedin</span>
+          <a href="https://www.linkedin.com/in/amaz-ur-rehman-903b94363/" target="_blank" rel="noopener">linkedin.com/in/amaz-ur-rehman-903b94363</a></li>
+      </ul>
+
+    </article>
 
   </main>
 
-  <script src="./assets/js/script.js"></script>
+  <footer class="site-footer">
+    <p>
+      Based on the <a href="https://github.com/codewithsadee/vcard-personal-portfolio" target="_blank" rel="noopener">vCard</a>
+      template by codewithsadee (<a href="./LICENSE">MIT License</a>), restyled with a terminal theme.
+    </p>
+  </footer>
 
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./assets/js/script.js"></script>
 
 </body>
 
